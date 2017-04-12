@@ -23,6 +23,7 @@ end
 group :test do
     gem 'selenium-webdriver'
     gem 'capybara'
+    gem 'test-unit', '~> 3.0'
 end
 gem 'jquery-rails'
 
