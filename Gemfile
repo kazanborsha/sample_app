@@ -2,30 +2,36 @@ source 'https://rubygems.org'
 ruby "2.4.0"
 gem 'rails'
 
-# Bundle edge Rails instead:
+# Bundle edge Ra5ils instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
 gem 'sqlite3'
 gem 'rspec-rails'
+gem 'guard-rspec', '4.6.0'
 end
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  #gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+ gem 'libnotify'
+  gem 'uglifier' 
 end
+
+ gem 'spork-rails' 
+  gem 'guard-spork'
+  gem 'childprocess' 
 group :test do
     gem 'selenium-webdriver'
     gem 'capybara'
-    gem 'test-unit', '~> 3.0'
+    gem 'test-unit' 
 end
 gem 'jquery-rails'
+gem 'zip'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
